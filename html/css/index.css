@@ -1,0 +1,303 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+.contenedor{
+    border-radius: 10px;
+    background-color: rgb(219, 219, 219);
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    border: 12px rgb(255, 255, 255) dashed;
+    align-items: center;
+}
+
+.contenedor h1{
+    color: #f3f3f3;
+    background-color: #502d16ff;
+    border: 4px dashed rgb(219, 219, 219);
+    padding: 10px 30px;
+    margin: 30px auto 30px auto;
+    font-size: 40px;
+    text-align: center;
+}
+
+.horca{
+    margin-top: 40px;
+    width: 250px;
+}
+
+.contenedor .contenedor-flex{
+    display: flex;
+    align-items: center;
+}
+
+.contenedor .contenedor-flex .ganaste{
+    width: 50%;
+}
+
+
+.palabra{
+    display: flex;
+    margin: 10px auto;
+    width: 100%;
+}
+
+.palabra .letra{
+    margin: auto;
+    background: #502d16ff;
+    padding: 10px 20px;
+    border: 3px dashed rgb(219, 219, 219);
+    font-weight: bolder;
+    font-size: 20px;
+    color: transparent;
+}
+
+.form-letra{
+    display: flex;
+    margin: auto;
+    width: 100%;
+}
+
+.form-letra input[type="text"]{
+    margin: 10px auto 50px auto;
+    width: 10%;
+    border: none;
+    border-radius: 10px;
+    border-bottom: 5px solid #502d16ff;
+    background-color: rgba(255, 255, 255, 0.19);
+    text-align: center;
+    color: #502d16ff;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.contenedor .form-palabra-pista {
+    margin: 0px auto 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contenedor .form-palabra-pista input[type="text"]{
+    border: none;
+    border-radius: 10px;
+    border-bottom: 5px solid #502d16ff;
+    background-color: rgba(255, 255, 255, 0.19);
+    text-align: center;
+    color: #502d16ff;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding: 10px;
+    margin: 15px;
+}
+
+.contenedor .form-palabra-pista .contenedor-enviar{
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor .form-palabra-pista .contenedor-enviar input[type="submit"]{
+    border: none;
+    font-weight: bolder;
+    background-color:#502d16ff;
+    border-radius: 5px;
+    margin-top: 10px;
+    color: white;
+    padding: 10px 20px;
+}
+
+
+
+.contenedor .back{
+    width: 100%;
+}
+
+.contenedor .back a{
+    margin: 20px 0px 50px 0px;
+    display: inline-block;
+    font-size: 18px;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    background: #784421ff;
+    font-size: 14px;
+    padding: 10px;
+    margin-left: 50px;
+}
+
+
+.botones{
+    display: flex;
+    align-items: space-around;
+    margin: 20px 0px;
+}
+
+.botones a{
+    width: 150px;
+    margin: 5px 5px;
+    display: inline-block;
+    font-size: 16px;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    padding: 10px 0px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    background: #784421ff;
+}
+
+.botones-ganaste{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.botones-ganaste a{
+    width: 100%;
+}
+
+footer{
+    margin: 70px 0px 30px 0px;
+}
+footer p{
+    font-weight: bolder;
+    color: rgb(163, 163, 163);
+    font-size: 12px;
+}
+
+
+@media screen and (max-width: 800px){
+    .contenedor h1{
+        font-size: 27px;
+    }
+
+    .contenedor .horca{
+        width: 200px;
+    }
+    .botones{
+        flex-direction: column;
+        align-content: center;
+    }
+    .botones a{
+        width: 200px;
+    }
+
+    footer p{
+        font-size: 10px;
+    }
+
+    .palabra .letra{
+        font-size: 16px;
+        padding: 6px 8px;
+    }
+
+    .contenedor .form-palabra-pista{
+        flex-direction: column;
+    }
+
+    .contenedor .form-palabra-pista input[type="text"]{
+        width: 200px;
+        font-size: 14px;
+    }
+
+    .botones-ganaste{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    }
+
+    .botones-ganaste a{
+    width: 100%;
+    }
+
+    .contenedor .back a{
+        margin-left: 20px;
+        font-size: 10px;
+        padding: 5px;
+    }
+
+    .form-letra input[type="text"]{
+        font-size: 12px;
+        width: 20%;
+    }
+
+
+    footer{
+        margin-top: 0px;
+    }
+
+}
+
+@media screen and (max-width: 400px){
+    .contenedor h1{
+        width: 80%;
+        font-size: 14px;
+    }
+
+    .contenedor .horca{
+        width: 80%;
+    }
+
+   .palabra .letra{
+        font-size: 10px;
+        padding: 3px 5px;
+    }
+
+    .form-letra input[type="text"]{
+        font-size: 10px;
+        height: 20px;
+    }
+
+    .botones a{
+        width: 120px;
+        padding: 10px 0px;
+        font-size: 12px;
+    }
+
+    .contenedor .form-palabra-pista{
+        flex-direction: column;
+    }
+
+    .contenedor .form-palabra-pista input[type="text"]{
+        width: 120px;
+        font-size: 10px;
+        margin: 10px auto 0px auto;
+    }
+
+    .contenedor .form-palabra-pista .contenedor-enviar input[type="submit"]{
+        font-size: 8px;
+        padding: 5px;
+    }
+
+
+    .botones-ganaste{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    }
+
+    .botones-ganaste a{
+        font-size: 10px;
+    }
+
+    .contenedor .back a{
+        font-size: 8px;
+        padding: 2px;
+        border: 1px;
+        margin-bottom: 0px;
+    }
+
+
+    footer p{
+        font-size: 7px;
+    }
+
+}
