@@ -10,14 +10,24 @@
 <body>
     
     <div class="contenedor">
-        <h1>PROXIMAMENTE !!</h1>
+        <h1>2 JUGADORES</h1>
         
         <img class="horca" src="img/Frames/horca-0.svg" alt="horca">
         <form id="form-palabra-pista" class="form-palabra-pista">
-            <input type="text" placeholder="Palabra" autocomplete="none" id="inputPalabra">
-            <input type="text" placeholder="Pista" autocomplete="none" id="inputPista">
+            <input type="text" placeholder="Palabra" autocomplete="no" id="inputPalabra">
+            <input type="text" placeholder="Pista" autocomplete="no" id="inputPista">
             <div class="contenedor-enviar"><input type="submit" value="JUGAR"></div>
         </form>
+        
+        <div class="hidden">
+            <div class="palabra">
+            </div>
+
+            <form class="form-letra">
+                <input type="text" maxlength="1">
+            </form>
+        </div>
+
 
         <div class="back">
             <a href="index.html">Volver</a>
@@ -29,7 +39,7 @@
         </footer>
     </div>
 
-    <script src="js/inserPalabra.js"></script>
+    <script src="js/insertPalabra.js"></script>
 
 </body>
 </html>

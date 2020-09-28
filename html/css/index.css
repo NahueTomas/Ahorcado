@@ -24,6 +24,14 @@
     text-align: center;
 }
 
+.error{
+    background-color: rgba(255, 0, 0, 0.238);
+    padding: 10px;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
 .horca{
     margin-top: 40px;
     width: 250px;
@@ -112,7 +120,9 @@
     padding: 10px 20px;
 }
 
-
+.hidden{
+    display: none;
+}
 
 .contenedor .back{
     width: 100%;

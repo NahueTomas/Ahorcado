@@ -82,12 +82,10 @@ function comprobarLetra(array, letra){
 
 // GLOBAL
 const divPalabra = document.querySelector('.palabra'),
-input = document.querySelector('input'),
 imagen = document.querySelector('img'),
 form = document.querySelector('form')
 
 let ingresado, acu = 0, letrasUsadasCorrecto = []
-
 
 let indiceC = numeroRandom(4)
   categoria = categorias[`${imprimirPista(indiceC)}`],
@@ -95,7 +93,6 @@ let indiceC = numeroRandom(4)
 
 document.querySelector('h1').textContent = imprimirPista(indiceC)
 palabra = formatearPalabra(palabra)
-
 
 imprimirPalabra(palabra)
 document.addEventListener('submit', arrancar)
