@@ -60,7 +60,7 @@
     border: 3px dashed rgb(219, 219, 219);
     font-weight: bolder;
     font-size: 20px;
-    visibility: hidden;
+    color: transparent;
 }
 
 .form-letra{
